@@ -1,0 +1,833 @@
+.main {
+    height: 100vh;
+    overflow: auto;
+}
+
+.searchfield {
+    max-width: 40rem;
+}
+
+.widthfull {
+    display: flex;
+    justify-content: center;
+}
+
+.padding {
+    padding: 0;
+}
+
+.workStation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #001529;
+    color: white;
+}
+
+.position {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    direction: rtl;
+}
+
+:host ::ng-deep .ant-drawer-content-wrapper {
+    width: 428px;
+}
+
+.floatIcon {
+    position: fixed;
+    top: 71px;
+    z-index: 1000;
+}
+
+/* Work space*/
+.fileIcon {
+    font-size: 1.5rem;
+}
+
+.gridCls {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    /* 16px */
+}
+
+.KNHpub {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(13.75rem, 1fr)) [col-end];
+    grid-template-rows: minmax(-webkit-min-content, -webkit-max-content);
+    grid-template-rows: minmax(min-content, max-content);
+}
+
+.goen0e {
+    color: var(--dt-on-surface, rgb(60, 64, 67));
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.ZoOnRbCopy {
+    cursor: pointer;
+    background-color: #cddbe7;
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    /* display: -webkit-box;
+    display: -webkit-flex; */
+    /* display: flex; */
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 3rem;
+    flex: 0 0 3rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.ZoOnRbFile {
+    cursor: pointer;
+    /* background-color: #cddbe7;
+    border: 1px solid gray; */
+    border-radius: 10px;
+    padding-left: 10px;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 3rem;
+    flex: 0 0 3rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.ZoOnRb {
+    cursor: pointer;
+    background-color: #cddbe7;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding-left: 10px;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 3rem;
+    flex: 0 0 3rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.RlzxUb {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 3rem;
+    flex: 0 0 3rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.hAkGVe {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.MxB3Nd {
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    font: var(--dt-title-small-font, 500 .875rem / 1.25rem "Google Sans"), "Google Sans", Roboto, Arial, sans-serif;
+    letter-spacing: var(--dt-title-small-spacing, .0178571429em);
+}
+
+.K7P0Qd {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-right: .25rem;
+}
+
+.K7P0Qd .onHxhb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.folderName {
+    font-size: 13px;
+    /* width: 30%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block; */
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    font: var(--dt-title-small-font, 500 .875rem / 1.25rem "Google Sans"), "Google Sans", Roboto, Arial, sans-serif;
+    letter-spacing: var(--dt-title-small-spacing, .0178571429em);
+}
+
+/* .innerFile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */
+
+/* .folderDiv {
+    cursor: pointer;
+    background-color: #cddbe7;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+} */
+
+/* File Upload CSS */
+
+.fileDetails {
+    padding: 10px;
+}
+
+.fileTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    overflow: hidden;
+    text-align: start;
+    text-overflow: ellipsis;
+    font: var(--dt-title-small-font, 500 .875rem / 1.25rem "Google Sans"), "Google Sans", Roboto, Arial, sans-serif;
+    letter-spacing: var(--dt-title-small-spacing, .0178571429em);
+}
+
+.fileMeta {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.userIcon {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 2px;
+    background: aliceblue;
+}
+
+/* .lrcDcc.s55KNe .SWigMc {
+    height: 250px;
+}
+
+.s55KNe .R11Are .SWigMc {
+    box-sizing: border-box;
+} */
+
+.s55KNe {
+    background-color: var(--dt-surface-container, #fff);
+    border: 1px solid var(--dt-surface-container, #fff);
+    border-radius: var(--dt-corner-card, .375rem);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: box-shadow .2scubic-bezier(.4, 0, .2, 1);
+    transition: box-shadow .2scubic-bezier(.4, 0, .2, 1);
+}
+
+.s55KNe .R11Are .bSmy5 {
+    padding-right: 6px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.s55KNe .bSmy5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 48px;
+    flex: 0 0 48px;
+}
+
+.O816mc {
+    top: inherit;
+}
+
+.a-Oa-qd-Nd {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.s55KNe .hitXfe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+}
+
+
+.s55KNe .E4xR9b {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.s55KNe .R11Are .bSmy5 .tohzcb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 50px;
+    height: 16px;
+    margin-left: 1px;
+}
+
+.s55KNe .tohzcb {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 24px;
+    padding: 12px 16px;
+    position: relative;
+    width: 24px;
+    z-index: 1;
+}
+
+.tohzcb {
+    color: var(--dt-on-surface-variant, rgb(95, 99, 104));
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.Y8YiQ.s55KNe .i0atD .SWigMc .ac {
+    width: 16px;
+    height: 16px;
+}
+
+.s55KNe .tohzcb>.ac,
+.s55KNe .tohzcb>.l-o-c-qd {
+    height: 24px;
+    position: relative;
+    width: 24px;
+}
+
+.s55KNe .tohzcb>.ac>svg,
+.s55KNe .tohzcb>.l-o-c-qd>svg,
+.s55KNe .tohzcb>.ac>img {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.k2eJge {
+    fill: var(--dt-mime-type-red, rgb(234, 67, 53));
+}
+
+.s55KNe .TBiAlb {
+    position: absolute;
+    right: 14px;
+    top: 54px;
+    z-index: 1;
+}
+
+.s55KNe .R11Are .jmyfOb {
+    padding: 10px 0;
+    margin: 1px;
+}
+
+.s55KNe .jmyfOb {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+    padding-right: 12px;
+}
+
+.s55KNe .R11Are .jmyfOb .Q5txwe {
+    font-size: 13px;
+}
+
+.s55KNe .jmyfOb .Q5txwe {
+    font: var(--dt-title-small-font, 500 .875rem / 1.25rem "Google Sans"), "Google Sans", Roboto, Arial, sans-serif;
+    letter-spacing: var(--dt-title-small-spacing, .0178571429em);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.s55KNe .R11Are .vhTuBb {
+    margin: 0;
+}
+
+.vhTuBb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin-right: 10px;
+    -webkit-align-self: center;
+    align-self: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.Z3bxWc {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.s55KNe .R11Are .gudAKb {
+    margin: 0 8px;
+}
+
+.s55KNe .gudAKb {
+    border-radius: var(--dt-corner-card, .375rem);
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0 .5rem .5rem;
+    position: relative;
+}
+
+.dotIocn {
+    font-size: 25px;
+}
+
+.historyMessage {
+    border: 1px solid white;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: #001529;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* --------------------Work space END ----------------*/
+
+/* Menu */
+/* Sidebar styles */
+.menuToggle {
+    position: fixed;
+    top: 68px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menuBar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+.menu {
+    position: fixed;
+    right: -250px;
+    /* top: 0; */
+    width: 250px;
+    height: 100%;
+    background: #001529;
+    list-style-type: none;
+    padding: 50px 0;
+    transition: right 0.3s ease;
+}
+
+.menu li {
+    padding: 15px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #444;
+}
+
+.menuOpen {
+    right: 0;
+}
+
+.content {
+    transition: width 0.3s ease;
+    padding: 20px;
+    width: 100%;
+}
+
+.contentShifted {
+    width: calc(100% - 250px);
+}
+
+.logoutButton {
+    /* position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center; */
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    /* left: 94%; */
+    transform: translateX(-50%);
+    text-align: center;
+    /* width: 100%; */
+
+}
+
+.logoutButton button {
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logoutButton button:hover {
+    background-color: #d62828;
+}
+
+.flexMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+
+}
+
+.iconWidth {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.hr {
+    color: white;
+}
+
+/* Side Menu 2 */
+
+/* Sidebar Styles */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 64px;
+    right: 0;
+    background-color: #001529;
+    overflow-y: auto;
+    /* Allows scrolling */
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav>div:first-child {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* Ensures content scrolls */
+}
+
+/* Open Sidebar */
+.sidenav.open {
+    width: 250px;
+}
+
+.float.open {
+    width: 250px;
+}
+
+/* Sidebar Content */
+.sidenavcontent {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    /* flex-grow: 1; */
+
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Sidebar Links */
+.sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* Hover effect */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Close Button */
+.closebtn {
+    /* position: absolute; */
+    top: 0;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Logout Button */
+.logoutbtn {
+    /* padding: 10px; */
+    /* background: red; */
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Style Main Content */
+#main {
+    transition: margin-right 0.5s;
+    padding: 20px;
+    overflow: auto;
+    height: 100vh;
+
+}
+
+/* Shift main content when sidebar opens */
+#main.shifted {
+    margin-right: 250px;
+}
+
+#main1.shifted {
+    margin-right: 250px;
+}
+
+/* Position Menu Button at Right Corner */
+.menubtn {
+    position: fixed;
+    top: 71px;
+    right: 10px;
+    cursor: pointer;
+    background: #001529;
+    border: 1px solid black;
+    padding: 6px 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.container {
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.progress {
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progressbar{
+    height: 18px;
+    border-radius: 4px;
+    transition: width 0.4s linear, background-color 0.4s linear;
+}
+/* 
+.progressbarstriped {
+    background-image: linear-gradient(45deg,
+            hsla(0, 0%, 95%, 0.8) 25%,
+            transparent 0,
+            transparent 50%,
+            hsla(0, 0%, 95%, 0.8) 0,
+            hsla(0, 0%, 95%, 0.8) 75%,
+            transparent 0,
+            transparent);
+    background-size: 40px 40px;
+    background-position: 0 0;
+}
+
+@keyframes striped-animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 40px 40px;
+    }
+}
+
+.progressbar.active {
+    animation: striped-animation 2s linear infinite;
+} */
+
+
+/* 
+@-webkit-keyframes MOVE-BG {
+    from {
+        -webkit-transform: translateX(0);
+    }
+
+    to {
+        -webkit-transform: translateX(46px);
+    }
+}
+
+@keyframes MOVE-BG {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(46px);
+    }
+}
+
+.bg {
+    position: absolute;
+    left: -46px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+
+    background: -webkit-repeating-linear-gradient(145deg,
+            #f8e9db 1px,
+            #fff5ed 2px,
+            #fff5ed 11px,
+            #f8e9db 12px,
+            #f8e9db 20px);
+    background: repeating-linear-gradient(-55deg,
+            #f8e9db 1px,
+            #fff5ed 2px,
+            #fff5ed 11px,
+            #f8e9db 12px,
+            #f8e9db 20px);
+
+    -webkit-animation-name: MOVE-BG;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    animation-name: MOVE-BG;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} */
+
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .custom-col {
+        flex: 0 0 25%;
+        /* 4 columns (col-lg-3 equivalent) */
+        max-width: 25%;
+    }
+}
